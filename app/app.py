@@ -18,7 +18,7 @@ class SocialMediaAnalytics():
         Login into a supported
             social media platform
         """
-        time.sleep(5)
+        time.sleep(3)
         self.session = {
             "user": self.user,
             "platform": social,
@@ -41,7 +41,7 @@ class SocialMediaAnalytics():
         """
         Get Followers
         """
-        time.sleep(5)
+        time.sleep(3)
         return {
             "profile": self.user,
             "followers": 700
@@ -54,8 +54,8 @@ class SocialMediaAnalytics():
         session = self.login(social)
         likes = self.get_likes(session)
         followers = self.get_followers(session)
-        
-        time.sleep(5)
+
+        time.sleep(3)
         return {
             "followers": followers["followers"],
             "likes": likes["likes"],
